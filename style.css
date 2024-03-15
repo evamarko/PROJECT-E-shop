@@ -1,0 +1,165 @@
+:root {
+  --white: #fff;
+  --pink: #fe4e6e;
+  --light-green: #d0f0c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
+
+.hero-section {
+  background-image: url("./images/hero-section-img.png");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px;
+  border-radius: 8px;
+  color: var(--white);
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.hero-section p {
+  font-size: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+.sale-badge {
+  background-color: var(--pink);
+  color: var(--white);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+@media only screen and (min-width: 950px) {
+  .sale-badge {
+    top: 30px;
+  }
+}
+
+.hero-btn {
+  background-color: var(--pink);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.promo-card-1,
+.promo-card-2,
+.promo-card-3 {
+  height: 250px;
+  width: 300px;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media only screen and (max-width: 1058px) {
+  .promo-card-1,
+  .promo-card-2,
+  .promo-card-3 {
+    margin-bottom: 30px;
+  }
+}
+
+.promo-card-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/vysavac.png");
+}
+
+.promo-card-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/mobil.png");
+}
+
+.promo-card-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/clothes.png");
+}
+
+.promo-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.promo-btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background-color: var(--pink);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.promo-heading {
+  color: var(--white);
+  position: absolute;
+  left: 20px;
+  bottom: 80px;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--light-green);
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1058px) {
+  .product-card-1,
+  .product-card-2,
+  .product-card-3 {
+    margin-bottom: 30px;
+  }
+}
